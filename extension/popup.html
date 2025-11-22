@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      body { width: 200px; padding: 10px; font-family: sans-serif; }
-      button { width: 100%; padding: 8px; cursor: pointer; background: #3b82f6; color: white; border: none; border-radius: 4px; }
-      button:hover { background: #2563eb; }
-    </style>
-  </head>
-  <body>
-    <h3>AI Detector</h3>
-    <p>Quick Tools:</p>
-    <button id="openUtils">Open Full Utilities</button>
-    <script src="popup.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 320px; padding: 0; margin: 0; font-family: 'Segoe UI', sans-serif; background: #f9f9f9; }
+    .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; color: white; }
+    h3 { margin: 0; display: flex; align-items: center; gap: 8px; }
+    .content { padding: 20px; }
+    textarea {
+      width: 100%; height: 100px; padding: 12px; border: 1px solid #e0e0e0;
+      border-radius: 8px; resize: none; font-family: inherit; box-sizing: border-box;
+    }
+    button {
+      width: 100%; padding: 12px; background: #111; color: white; border: none;
+      border-radius: 8px; margin-top: 10px; cursor: pointer; font-weight: 600;
+    }
+    button:hover { background: #333; }
+    #res { margin-top: 15px; font-size: 14px; line-height: 1.5; color: #444; }
+    .links { margin-top: 20px; border-top: 1px solid #eee; padding-top: 15px; text-align: center; font-size: 12px; }
+    a { color: #667eea; text-decoration: none; cursor: pointer; margin: 0 5px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h3>🛡️ Unbreaking News</h3>
+    <div style="font-size:12px; opacity:0.8; margin-top:5px;">Glass Edition v6.1</div>
+  </div>
+  <div class="content">
+    <textarea id="inp" placeholder="Paste suspicious text here..."></textarea>
+    <button id="btn">Analyze Text</button>
+    <div id="res"></div>
+
+    <div class="links">
+      <a id="openOptions">⚙️ Settings</a> •
+      <a id="openForensics">🕵️ Forensics Lab</a>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
 </html>

@@ -1,14 +1,44 @@
 {
   "manifest_version": 3,
-  "name": "AI Reality Check",
-  "version": "1.0",
-  "permissions": ["contextMenus", "activeTab", "scripting"],
-  "host_permissions": ["https://api-inference.huggingface.co/*"],
+  "name": "Unbreaking News: Glass Edition",
+  "version": "6.0",
+  "description": "Premium OSINT Verification & Forensics Suite. Zero-Hang Technology.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "contextMenus",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "background": {
     "service_worker": "background.js"
   },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"],
+      "css": ["styles.css"]
+    }
+  ],
   "action": {
-    "default_popup": "popup.html", 
-    "default_title": "Open AI Utilities"
+    "default_popup": "popup.html",
+    "default_title": "Unbreaking News"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["forensics.html", "forensics.js", "styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   }
 }

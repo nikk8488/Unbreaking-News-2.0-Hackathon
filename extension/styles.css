@@ -1,0 +1,95 @@
+/* Glass Button */
+#ubn-glass-btn {
+position: absolute;
+z-index: 2147483647;
+background: rgba(255, 255, 255, 0.25);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+color: #333;
+padding: 8px 16px;
+border-radius: 30px;
+font-family: 'Segoe UI', sans-serif;
+font-weight: 700;
+cursor: pointer;
+box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+transition: all 0.3s ease;
+opacity: 0;
+pointer-events: none;
+}
+#ubn-glass-btn:hover {
+background: rgba(255, 255, 255, 0.4);
+transform: translateY(-2px);
+}
+
+/* Glass Overlay (Loading) */
+#ubn-glass-overlay {
+position: fixed; top: 20px; right: 20px;
+background: rgba(0, 0, 0, 0.7);
+backdrop-filter: blur(5px);
+color: white;
+padding: 12px 20px;
+border-radius: 12px;
+display: flex; align-items: center; gap: 10px;
+z-index: 2147483647;
+font-family: sans-serif;
+animation: ubnSlideIn 0.3s ease;
+}
+
+/* Glass Card (Result) */
+#ubn-glass-card {
+position: fixed; top: 20px; right: 20px; width: 320px;
+background: rgba(255, 255, 255, 0.95);
+border-radius: 16px;
+box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+z-index: 2147483647;
+font-family: 'Segoe UI', sans-serif;
+overflow: hidden;
+animation: ubnSlideIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+border: 1px solid rgba(0,0,0,0.1);
+}
+
+.ubn-card-header {
+  padding: 15px;
+  display: flex; justify-content: space-between; align-items: center;
+  color: #1f2937;
+}
+
+.ubn-card-title { display: flex; flex-direction: column; }
+.ubn-card-title strong { font-size: 16px; }
+
+.ubn-score-circle {
+  width: 36px; height: 36px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  display: flex; justify-content: center; align-items: center;
+  font-weight: bold; font-size: 14px;
+}
+
+.ubn-card-body { padding: 15px; color: #4b5563; font-size: 14px; line-height: 1.5; }
+
+.ubn-chips { display: flex; flex-wrap: wrap; gap: 5px; margin: 10px 0; }
+.ubn-chips span {
+  background: #f3f4f6; color: #374151;
+  padding: 2px 8px; border-radius: 10px;
+  font-size: 11px; border: 1px solid #e5e7eb;
+}
+
+.ubn-action-btn {
+  display: block; text-align: center;
+  background: #111827; color: white;
+  text-decoration: none; padding: 8px;
+  border-radius: 8px; margin-top: 10px;
+  transition: 0.2s;
+}
+.ubn-action-btn:hover { background: #374151; }
+.ubn-close { background:none; border:none; font-size:20px; cursor:pointer; opacity:0.6; }
+
+.ubn-loader {
+  width: 16px; height: 16px;
+  border: 2px solid white; border-top-color: transparent;
+  border-radius: 50%; animation: ubnSpin 1s linear infinite;
+}
+
+@keyframes ubnSlideIn { from { transform: translateX(120%); } to { transform: translateX(0); } }
+@keyframes ubnSpin { to { transform: rotate(360deg); } }
