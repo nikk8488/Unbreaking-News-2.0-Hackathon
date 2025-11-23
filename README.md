@@ -20,6 +20,7 @@ This utility combines text-based heuristic analysis and a client-side image fore
 5. [Technology Choices](#%EF%B8%8F-technology-choices)
 6. [Technical Architecture](#-technical-architecture)
 7. [Pipelining and Data Flow](#-pipelining-and-data-flow)
+8. [Evaluation and Testing](#-evaluation-and-testing)
 99. [The Future of this Project](#%EF%B8%8F-the-future-of-this-project)
 
 
@@ -167,6 +168,34 @@ User Selection ▶️ Credibility Score
     * <b>Per-channel view:</b> View individual RGB channels
     * <b>Reverse Image Search:</b> Look up the image online on <i>Google</i>, <i>Yandex</i>, <i>Bing</i> or <i>Tineye</i>\
     It is also possible to access these utilities via keyboard shortcuts. For instance: 'n' or '4' for `noise analysis` and 'e' or '3' for `ela`
+
+## 🧪 Evaluation and Testing
+### Text Analysis
+#### Where it shines 🌟
+<b>Is the Earth flat?</b>
+<img width="1366" height="768" alt="guardian_article" src="https://github.com/user-attachments/assets/e97a4f91-0e3b-4907-9dbc-e568b6718e73" />
+
+<b>Did France win the 2018 FIFA World Cup in Russia?</b>
+<img width="1366" height="768" alt="france_2018_fifa" src="https://github.com/user-attachments/assets/09384771-0902-4a28-949d-810ead1037bc" />
+
+While it's true these entries belong to dictionaries, it still holds that it successfully identified the context and checked for credibility indictators.
+We can try it against a topic like mathematics.
+We noticed that earlier versions were aggressive against the absolute language of mathematics, but we refined that by properly isolating the "absolute language" case, as evident by this remarkable result when it correctly deemed the article about [Wedge Sum](https://en.wikipedia.org/wiki/Wedge_sum) as credible.
+<img width="1366" height="768" alt="wedge_sum" src="https://github.com/user-attachments/assets/9ce2f067-3b10-4a9e-aade-56b47bc7defa" />
+
+
+#### Where it (still) fails ❌
+On fake sites like onion where it _feels_ like it's credible, it fails and deems it as such.
+This is an example from **the Onion** website.
+<img width="1366" height="768" alt="false_onion_news_identified" src="https://github.com/user-attachments/assets/85a48d89-7448-49f4-9144-a24a85c35593" />
+
+### Forensics Lab
+Here, we demonstrate the capabilities of the Error Level Analysis.\
+Input Image:\
+![FotoForensics](https://github.com/user-attachments/assets/7352902c-53e5-40f9-9b07-925b8b36f57e)\
+ELA results:\
+<img width="1366" height="768" alt="ela_results_showing_manip" src="https://github.com/user-attachments/assets/9af2a8b7-e313-496b-a86c-4c6afef233f9" />
+
 
 
 
