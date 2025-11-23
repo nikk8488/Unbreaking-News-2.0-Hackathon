@@ -17,7 +17,7 @@ This utility combines text-based heuristic analysis and a client-side image fore
 2. [Installing and Running](#-installing-and-running)
 3. [Project Structure](#-project-structure)
 4. [Use Cases](#-use-cases)
-5. [Technology Choices](#-technology-choices)
+5. [Technology Choices](#%EF%B8%8F-technology-choices)
 6. [Technical Architecture](#-technical-architecture)
 7. [Pipelining and Data Flow](#-pipelining-and-data-flow)
 99. [The Future of this Project](#%EF%B8%8F-the-future-of-this-project)
